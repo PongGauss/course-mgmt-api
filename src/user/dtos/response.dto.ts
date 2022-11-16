@@ -19,7 +19,7 @@ export class UserProfileResponseDto {
   @Expose({ name: 'lastName' })
   last_name: string;
 
-  @Expose({ name: 'firstName' })
+  @Expose({ name: 'nickName' })
   nick_name: string;
 
   email: string;
