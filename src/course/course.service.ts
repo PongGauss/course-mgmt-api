@@ -1,10 +1,9 @@
 import {
   Injectable,
   ConflictException,
-  HttpException,
   NotFoundException,
 } from '@nestjs/common';
-import { CourseCategory, Prisma } from '@prisma/client';
+import { CourseCategory } from '@prisma/client';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { UserInfo } from 'src/user/decorators/user.decorator';
 import { CourseFilterParamDto } from './dtos/course-search.dto';
@@ -63,7 +62,7 @@ export class CourseService {
         opened_seat,
         description,
         category: courseCate,
-        deleted_at: new Date(),
+        deleted_at: null,
         instructor_id: userId,
         slug,
       },

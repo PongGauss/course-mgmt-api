@@ -71,7 +71,7 @@ export class AuthService {
         birth_day: birthDate,
         gender: userGender,
         uuid,
-        deleted_at: new Date(),
+        deleted_at: null,
       },
     });
 
