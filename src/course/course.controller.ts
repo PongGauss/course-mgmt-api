@@ -22,7 +22,7 @@ export class CourseController {
   }
 
   @Get('')
-  async searchCourse(@Query('q') q: string, @Query('date') date: Date) {
+  async searchCourse(@Query('q') q: string, @Query('date') date: string) {
     const filters = {
       ...(q && {
         slug: {
@@ -32,6 +32,9 @@ export class CourseController {
       ...(date && {
         ended_at: {
           gte: new Date(date),
+        },
+        started_at: {
+          lte: new Date(date),
         },
       }),
     };

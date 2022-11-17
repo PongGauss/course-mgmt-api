@@ -19,6 +19,7 @@ export const courseSelectedFields = {
   opened_seat: true,
   description: true,
   category: true,
+  image: true,
 };
 
 @Injectable()

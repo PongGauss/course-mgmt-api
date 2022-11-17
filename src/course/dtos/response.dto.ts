@@ -7,6 +7,7 @@ import {
 } from 'class-validator';
 import { Exclude, Expose } from 'class-transformer';
 import { User } from '@prisma/client';
+import { StoreConfig } from 'cache-manager';
 
 export class CourseInstructorUser {
   @Expose({ name: 'firstName' })
@@ -36,6 +37,7 @@ export class CourseResponseDto {
 
   description: string;
   category: string;
+  image: string;
 
   user: CourseInstructorUser;
 
