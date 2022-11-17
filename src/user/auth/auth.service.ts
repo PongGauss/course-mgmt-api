@@ -9,11 +9,9 @@ import {
 import { Cache } from 'cache-manager';
 import { PrismaService } from 'src/prisma/prisma.service';
 import * as bcrypt from 'bcryptjs';
-// import * as jwt from 'jsonwebtoken';
 import { Gender, UserRole } from '@prisma/client';
 import { SigninDto, SignupDto } from '../dtos/auth.dto';
 import { UserProfileResponseDto } from '../dtos/response.dto';
-import { last } from 'rxjs';
 import { v4 as uuidv4 } from 'uuid';
 import { JwtService } from '../jwt/jwt.service';
 import { ProfileDto } from '../dtos/profile.dto';

@@ -1,15 +1,5 @@
 import { UserRole } from '.prisma/client';
-import {
-  Controller,
-  Post,
-  Body,
-  Get,
-  Param,
-  ParseEnumPipe,
-  UnauthorizedException,
-  UseInterceptors,
-  Patch,
-} from '@nestjs/common';
+import { Controller, Post, Body, Get, Patch } from '@nestjs/common';
 import { SigninDto, SignupDto } from '../dtos/auth.dto';
 import { AuthService } from './auth.service';
 import { Roles } from 'src/decorator/roles.decorator';
