@@ -4,7 +4,6 @@ import { CourseCreateDto } from './dtos/course.dto';
 import { Roles } from 'src/decorator/roles.decorator';
 import { UserRole } from '@prisma/client';
 import { User, UserInfo } from 'src/user/decorators/user.decorator';
-import { query } from 'express';
 
 @Controller('course')
 export class CourseController {

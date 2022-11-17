@@ -1,13 +1,4 @@
-import {
-  IsNumber,
-  IsPositive,
-  IsString,
-  IsNotEmpty,
-  IsOptional,
-} from 'class-validator';
-import { Exclude, Expose } from 'class-transformer';
-import { User } from '@prisma/client';
-import { StoreConfig } from 'cache-manager';
+import { Expose } from 'class-transformer';
 
 export class CourseInstructorUser {
   @Expose({ name: 'firstName' })
